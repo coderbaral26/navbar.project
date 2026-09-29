@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(120deg, #85bcef, #172d75);
+}
+
+.form-container {
+    width: 540px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.heading {
+    background: #2859d5;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 8px;
+}
+
+form {
+    padding: 45px 35px 35px;
+}
+
+.name-row {
+    display: flex;
+    gap: 28px;
+}
+
+.name-row .field {
+    width: 50%;
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+.field label,
+form > label {
+    display: block;
+    color: #555;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    height: 52px;
+    border: 2px solid #ddd;
+    padding: 8px;
+    font-size: 17px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #2860d8;
+}
+
+.gender {
+    width: 100px;
+    height: 62px;
+    margin: 5px auto 18px;
+    background: #d8f2f4;
+    border-radius: 35px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gender label {
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+}
+
+.gender input {
+    display: none;
+}
+
+.gender span {
+    padding: 8px 20px;
+    border-radius: 25px;
+}
+
+.gender input:checked + span {
+    background: #2859d5;
+    color: white;
+}
+
+button {
+    width: 100%;
+    height: 56px;
+    border: none;
+    background: #2860d8;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1749bd;
+}
